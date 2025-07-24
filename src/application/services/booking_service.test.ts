@@ -188,8 +188,16 @@ describe("BookingService", () => {
   it("deve lançar um erro ao tentar cancelar uma reserva inexistente", async () => {
     const bookingId = "invalid-id";
 
+    const spyFindById = jest
+      .spyOn(fakeBookingRepository, "findById")
+      .mockResolvedValue(null);
+
     await expect(bookingService.cancelBooking(bookingId)).rejects.toThrow(
       "Reserva não encontrada."
     );
+
+    expect(spyFindById).toHaveBeenCalledWith(bookingId);
+    expect(spyFindById).toHaveBeenCalledTimes(1);
+    spyFindById.mockRestore();
   });
 });
