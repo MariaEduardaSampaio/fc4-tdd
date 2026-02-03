@@ -1,42 +1,92 @@
-# 📌 Desafio Técnico: Desenvolvimento Orientado a Testes (TDD)
+# FC4 – Test-Driven Development (TDD)
 
-## 🎯 Objetivo
+🇧🇷 Português | 🌍 [English version](README_EN.md)
 
-Aplicar TDD na implementação de funcionalidades de um sistema de reservas de propriedades. O desafio inclui criação de testes unitários e de integração (E2E) para cobrir:
+Este projeto demonstra a aplicação prática de **Test-Driven Development (TDD)** em um sistema backend desenvolvido em **TypeScript/Node.js**, com foco em **qualidade de código, domínio rico e alta testabilidade**.
 
-- Mapeamento de entidades (mappers)
-- Criação de usuários e propriedades via REST
-- Validação de políticas de reembolso
-- Cancelamento de reservas
+O sistema simula um domínio de **reservas (booking)**, aplicando boas práticas de engenharia de software desde o domínio até a infraestrutura, sempre guiado por testes automatizados.
 
 ---
 
-## 🚀 Como executar os testes do projeto
+## 🎯 Objetivo
 
-### 1. Clone o repositório
+Demonstrar como construir software orientado a domínio utilizando **TDD como prática central**, garantindo regras de negócio bem definidas, código confiável e fácil de evoluir.
 
+---
+
+## 🧠 Conceitos Aplicados
+
+- Test-Driven Development (TDD)
+- Domain-Driven Design (DDD)
+- SOLID
+- Camadas bem definidas (Domain, Application, Infrastructure)
+- Repositórios e mapeadores
+- Value Objects
+- Regras de cancelamento e reembolso
+
+---
+
+## 🧱 Estrutura do Projeto
+
+- **Domain** – Entidades, value objects e regras de negócio
+- **Application** – Serviços de aplicação e DTOs
+- **Infrastructure** – Persistência, repositórios e controllers
+- **Web** – Exposição via API HTTP
+- **Tests** – Testes unitários, de integração e end-to-end
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- TypeScript
+- Node.js
+- Jest
+- TypeORM
+- SQLite (ambiente de testes)
+
+---
+
+## ▶️ Como Executar
+
+1. Clone o repositório:
 ```bash
 git clone https://github.com/MariaEduardaSampaio/fc4-tdd.git
 ```
 
-### 2. Instale as dependências
-
+2. Instale as dependências:
 ```bash
 npm install
 ```
 
-### 3. Execute os testes
-
+3. Execute os testes:
 ```bash
 npm test
 ```
 
 ---
 
-## 📸 Exemplo de execução dos testes
+## 🧪 Testes
 
-Após rodar `npm test`, os testes devem aparecer no terminal da seguinte forma:
+O projeto possui ampla cobertura de testes:
 
-![Testes passando](https://github.com/user-attachments/assets/2e27fa45-1dea-4288-9ce7-fd2c2433a215)
+- Testes unitários (domínio e aplicação)
+- Testes de integração (repositórios)
+- Testes end-to-end (controllers)
+
+Os testes guiam o desenvolvimento e garantem a corretude das regras de negócio.
 
 ---
+
+## 📚 Aprendizados
+
+- Escrita de código guiada por testes
+- Modelagem de domínio orientada a regras
+- Criação de código altamente testável
+- Separação clara de responsabilidades
+- Evolução segura de funcionalidades
+
+---
+
+## 🎓 Contexto
+
+Projeto desenvolvido com foco em prática avançada de **Test-Driven Development** e **Engenharia de Software**.
